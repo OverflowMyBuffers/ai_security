@@ -39,7 +39,7 @@ export const ChatApp = () => {
             body: raw
         };
         
-        fetch("https://i15y93y2xjsu03-5005.proxy.runpod.net/chat", requestOptions)
+        fetch("http://127.0.0.1:5005/chat", requestOptions)
         .then(async(response) => {
             let res = await response.json()
             let newMessage: Message = {

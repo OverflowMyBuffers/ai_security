@@ -8,7 +8,7 @@ from langchain_experimental.pal_chain import PALChain
 from langchain import OpenAI
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://*.proxy.runpod.net"}})
+CORS(app, resources={r"/*": {"origins": "http://127.0.0.1:3005"}})
 
 def remove_ansi_escape_codes(input_text):
     # Pattern to match ANSI escape codes
