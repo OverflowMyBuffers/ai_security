@@ -1,0 +1,4 @@
+ollama
+flask
+flask_cors
+python-docx
